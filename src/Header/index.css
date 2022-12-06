@@ -1,0 +1,52 @@
+header {
+    width: 60%;
+    height: 20%;
+    color: white;
+    margin-top: 2%;
+    padding-left: 20%;
+    padding-right: 20%;
+}
+
+.titleAndBasket{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+h1{
+    margin: 2%;
+}
+
+.numberOfProductInBasket{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    background-color: white;
+    color: black;
+    height: 17px;
+    width: 17px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    left: 78.7%;
+    top: 9.5%;
+    font-size: 0.9rem;
+}
+
+.titleProducts{
+    display: flex;
+    justify-content: center;
+}
+
+.busket {
+    background-color: rgb(77, 14, 136);
+    border: 0;
+    color: white;
+}
+
+button :hover {
+    cursor: pointer;
+}

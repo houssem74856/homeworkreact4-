@@ -1,0 +1,42 @@
+.product {
+    display: flex;
+    flex-direction: row;
+    height: 150px;
+    width: 34%;
+    background-color: blue;
+    margin-right: 2%;
+    margin-bottom: 1%;
+    border-radius: 8px;
+    align-items: center;
+}
+
+.productImg {
+    height: 77%;
+    width: 35%;
+    border: solid 5px white;
+    margin: 2%;
+}
+
+.productTitle{
+    margin : 0;
+    color: rgba(255, 255, 81, 0.9);
+}
+
+.productDes {
+    margin-top: 2px;
+    margin-bottom: 32px;
+}
+
+.productPrice {
+    margin-bottom: 2px;
+    color: rgba(255, 255, 81, 0.9);
+}
+
+.addButton {
+    margin-bottom: 2%;
+    background-color: rgb(255, 255, 81);
+    border: 0;
+    height: 30px;
+    border-radius: 2px;
+    cursor: pointer;
+}

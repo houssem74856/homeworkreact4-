@@ -1,0 +1,76 @@
+.basketProducts {
+    width: 60%;
+    margin-left: 20%;
+}
+
+.basketProduct {
+    display: flex;
+    flex-direction: row;
+    background-color: blue;
+    height: 150px;
+    margin-bottom: 1%;
+    border-radius: 8px;
+}
+
+.BproductImg {
+    width: 15%;
+    border: solid 5px white;
+    margin: 2%;
+}
+
+.BproductInfs {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 75%;
+    color: rgba(255, 255, 81, 0.9);
+    justify-content: space-between;
+}
+
+.infs {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 90%;
+    height: 100%;
+}
+
+.BproductTitle {
+    margin: 5%;
+}
+
+.minus {
+    width: 5%;
+    height: 22%;
+    margin-right: 1%;
+}
+
+.howManny {
+    width: 10%;
+    height: 22%;
+    background-color: white;
+    color: black;
+    margin-right: 1%;
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.plus {
+    width: 5%;
+    height: 22%;
+    margin-right: 5%;
+}
+
+.BproductPrice {
+    
+}
+
+.deleteIcon {
+    background-color: blue;
+    border: 0;
+    margin-right: 5%;
+    display: flex;
+    justify-self: flex-end;
+}
