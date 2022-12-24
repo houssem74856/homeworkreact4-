@@ -1,15 +1,18 @@
 import './index.css'
 import Product from '../Product'
+import { useSelector } from 'react-redux';
 
-function Products({numOfProducts,setNumOfProducts,products,dispatch}) {
+function Products () {
+
+    const { products } = useSelector(state => state.products)
+
     return (
         <div className='products'>
-            <Product id="1" products={products} numOfProducts={numOfProducts} setNumOfProducts={setNumOfProducts} dispatch={dispatch}/>
-            <Product id="2" products={products} numOfProducts={numOfProducts} setNumOfProducts={setNumOfProducts} dispatch={dispatch}/>
-            <Product id="3" products={products} numOfProducts={numOfProducts} setNumOfProducts={setNumOfProducts} dispatch={dispatch}/>
-            <Product id="4" products={products} numOfProducts={numOfProducts} setNumOfProducts={setNumOfProducts} dispatch={dispatch}/>
-            <Product id="5" products={products} numOfProducts={numOfProducts} setNumOfProducts={setNumOfProducts} dispatch={dispatch}/>
-            <Product id="6" products={products} numOfProducts={numOfProducts} setNumOfProducts={setNumOfProducts} dispatch={dispatch}/>
+            {products.map(product => {
+                return (
+                    <Product title={product.title} description={product.description} price={product.price} id={product.id}/>
+                )
+            })}
         </div>
     )
 }
